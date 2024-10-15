@@ -1,0 +1,63 @@
+							Assignment-Module 1
+					Software Testing Inroduction And Fundamentals
+FUNDAMENTALS
+*What is SDLC?
+
+SDLC Stands for Software Development Life Cycle	is a structured process that is used to design, develop, and test good-quality of
+Software.
+ 
+SDLC,is a methodology that defines the entire procedure of software development step-by-step.
+
+The SDLC Model involves six phases or stages while developing any software.
+1.Planning And Requirement Analysis
+2.Defining Requirements
+3.Design
+4.Development
+5.Testing
+6.Deployment & Maintanance
+
+*What is Software Testing?
+
+Software testing is an important process in the software development lifecycle . 
+
+It involves verifying and validating that a software application is free of bugs, meets the technical requirements set by its design 
+and development , and satisfies user requirements efficiently and effectively.
+
+*What is OOPS?
+Object Oriented Programming Is a Programming Paradigm where we can create user defined datatypes or data structure.
+OOPs is about creating objects that contains data and methods. 
+
+*Write Basic Concepts Of OOPs.
+1.Class
+2.Objects		
+3.Data Abstraction
+4.Encapsulation
+5.Inheritance
+6.Polymorphism
+7.Dynamic Binding
+8.Message Passing
+
+*What is Object?
+
+Object is a basic unit of OOPs and represent the real life entities.
+
+Object is a instance of a class.
+
+When we create a class no memory is allocated but we create objects which allocate a memory 
+An objects has a identity,state and behviour.
+
+For example Dog is a real-life Object, which has some characteristics like color, Breed, Bark, Sleep, and Eats.
+
+*What is Class?
+A class is collection of Objects.
+
+It is User defined data types which contains data members and member functions which can be used and accessed by creating a instsnce 
+of that class.
+
+For example , consider the class of cars there may be many cars with diffrent names and brands but all of them share some same 
+properties like 4wheels,colors,speedlimits,average,etc..
+Here, Cars are class and colors,speed are its properties
+
+
+
+
