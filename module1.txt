@@ -196,6 +196,32 @@ There are 12 principle of the agile menifesto.
  10.Encouraging Simplicity.
  11.Recognizing that the best work emerges from self-organized teams that deliver the best architectures and designs.
  12.Reflecting regularly on how the team can be more effective and fine-tuning and adjusting the approach.
+
+* Explain working methodology of agile model and also write pros and cons.
+Agile methodology is a project management strategy that devides the projects into multiple phases encouraging continuous improvement for each phase. 
+In the beginning of the project, the team cycles through planning, evaluation and execution stages to collaborate toward multiple project goals. As a methodology, the agile project strategy contains four fundamental values, including:
+-individual over tools
+-working software over documentation
+-customer collabration over contract negotiation
+-change responce over plan rigidity.
+
+PROS OF AGILE METHODOLOGY:
+1.Timely Delivery
+2.Adaptability
+3.Ease Of collaboration
+4.Increase Perfomance improvement
+5.Transparancy
+6.Continous Improvement
+7.Higher Profits
+8.Less Preparatory Work 
+
+CONS OF AGILE METHODOLOGY:
+1.Transfer defficulties
+2.variable goals
+3.lack of documentation
+4.less documented improvement
+5.Goal Focus Shifting
+6.Less Predictibility
  	
 
 
