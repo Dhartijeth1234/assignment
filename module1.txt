@@ -23,6 +23,19 @@ Software testing is an important process in the software development lifecycle .
 It involves verifying and validating that a software application is free of bugs, meets the technical requirements set by its design 
 and development , and satisfies user requirements efficiently and effectively.
 
+*What is Agile metodology?
+Agile Methodology is project management framework that breaks projects down into several dynamic phases,commonly knowns as sprints.
+
+Agile framework is iterative methodology.After every sprint team reflect and look back to see if there was anything to improve so they
+can adjust their strategy for next sprint.
+
+*What is SRS?
+SRS stands for Software Requirement Specification .SRS as the name suggests its is a complete specification and description of the 
+software that need to be fulfilled for te successfull development to the software system.
+
+these requirements are functional or non functional depends on types of requirements.
+
+
 *What is OOPS?
 Object Oriented Programming Is a Programming Paradigm where we can create user defined datatypes or data structure.
 OOPs is about creating objects that contains data and methods. 
@@ -57,6 +70,142 @@ of that class.
 For example , consider the class of cars there may be many cars with diffrent names and brands but all of them share some same 
 properties like 4wheels,colors,speedlimits,average,etc..
 Here, Cars are class and colors,speed are its properties
+
+* What is encapsulation?
+Encapsulation is Wrapping  of data or encapsulate the attributes and methods of class.
+
+Encapsulation is a way to restrict the direct access to some components of object so users cannot access stste values for all the 
+variable of particular objects.
+
+Encapsulation can be used to hide both data members and data methods associated with instantiated class or object.
+
+Some Advantages Of encapsulation Are As Follows:
+1.Hiding Data
+2.More Flexibility
+3.Easy To Reuse
+
+*What is Inheritance?
+Inheritance is a fundamental mechanism that allows a class to inherit properties and behaviour from another class.
+
+It promotes code reuse and hierachical relationships among classes.
+
+For Example,A car,bus and bicycle all are under the vehicle class That is, they have inherited the attributes of the vehicle class,
+implying that they are all utilised for transportation. 
+
+there are many types of inheritance 
+-Single inheritance
+-Multilevel inheritance
+-Multiple inheritance 
+-Hierarchical inheritance
+-Hybrid inheritance
+
+*What is Polymorphisam?
+
+Polymorphisam is a popular concept in object oriented programming reffering to the idea that entity in code such as variales,function
+and objects can have more then one form.
+
+It describe the ability of something to have or to be displayed in more then one forms.
+
+In computer programming there are two main types of polymorpisam.
+1.Compile time polymorpisam :-
+	Also known as static polymorpisam.It is common in oops like java.it is used method overloading to create multiple methods 
+that have the same name in the same class but diffrent number of parameter.
+
+2.Runtime Polymorpisam:-
+	Also Known as Dynamic Polymorpisam it is used method overriding  to let a child class have its own definition of a method 
+belonging to the parent class.
+
+*Write SDLC phases With Basic introduction.
+
+The SDLC typically includes the following phases..
+
+1.Requirements Gathering:
+	this phase involves gathering information about the software requirements from customers,stackholders,endusers and business
+analyst.
+
+2.Design:
+	in this phase software design is created.It has two steps
+	-HLD(High Level Design)
+  	-LLD(Low Level Design)
+3.Implementation Or Coding:
+	the designed and then implemented in code ,this phase also called Development.
+	This phase is longest phase in SDLC.This phase consist of Front end,Middleware and Back end
+	-In front-end: Development of coding is done even SEO settings are done.
+	-In Middleware: They connect both the front end and back end.
+	-In the back-end: A database is created.
+4.Testing: The software is thoroughly tested to ensure that it meets the requirements and works correctly.
+
+5.Deployment: After successful testing, The software is deployed to a production environment and made available to end-users.
+
+6.Maintenance: This phase includes ongoing support, bug fixes, and updates to the software.
+
+There are different methodologies that organizations can use to implement the SDLC, such as Waterfall, Agile, Scrum, V-Model and 
+DevOps.
+	-
+*Explain the phases of the waterfall model.
+Waterfall model is  classics software development methodology.it is linear and sequancial approach to software development that 
+consists of several phases.
+
+The Waterfall model has six phases which are
+1.Requirements:this phase involves gathering requirements from stackeholders and analyzing them to understand the scope and objectives 
+	       of the project.
+
+2.Design:once Requirements are understood the design phase begins This involves creating a detailed design document that outlines the 
+         software architecture, user interface, and system components
+
+3.Development:The Development phase include implementation involves coding the software based on the design specifications. 
+              This phase also includes unit testing to ensure that each component of the software is working as expected.
+
+4.Testing: The software is thoroughly tested to ensure that it meets the requirements and works correctly.
+
+5.Deployment:Once the software has been tested and approved, it is deployed to the production environment.
+
+6.Maintanance:The final phase of the Waterfall Model is maintenance, which involves fixing any issues that arise after the software 
+              has been deployed and ensuring that it continues to meet the requirements over time. 
+
+*Write a phases of the spiral model.
+Spiral Model is risk driven model focus is on managing risk through the multiple iteration of the software development process.
+It consist of the following phases:
+1.Objective Defined:
+	In first phase of spiral model we clarify what is project aims to achieve.including functional and non functional requirements.
+
+2.Risk Analysis:
+	In this phase the risk associated with the projects are identified and evaluated.
+
+3.Engineering:
+	In this phase software is developed based on requirement gathered in previous phase.
+
+4.Evaluation:
+	In this phase software is evaluated to determine if it is meets the customer requirements
+
+5.Planning:
+	The next iteration of the spiral begins with the new planning phase based on result of the evaluation.
+
+
+*Write a Agile Menifesto principles.
+There are 12 principle of the agile menifesto.
+ 1.Meeting end users needs with early and continous delivery of work.
+ 2.Being open to changes	in requirements even late in th projects.
+ 3.Delivering completed work at regular itervals,preferably in short ones.
+ 4.Working with projects team and business oweners daily.
+ 5.Assembling a motivated team,proving them with right enviornment and support.
+ 6.Communicating face to face regularly.
+ 7.Using complted work to measure progress.
+ 8.Creating processes that promotes sustainable efforts and constant pase of work.
+ 9.Requiring continuous attention to excellence through good design
+ 10.Encouraging Simplicity.
+ 11.Recognizing that the best work emerges from self-organized teams that deliver the best architectures and designs.
+ 12.Reflecting regularly on how the team can be more effective and fine-tuning and adjusting the approach.
+ 	
+
+
+					
+ 
+
+
+ 
+
+
 
 
 
