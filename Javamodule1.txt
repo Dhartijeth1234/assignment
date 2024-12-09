@@ -1,0 +1,967 @@
+						JAVA ASSIGNMENT
+						   MODULE-1
+1.Introduction to java
+
+*History  of java:
+	Java was developed by "James Gosling" who is known as father of java in 1995.
+	
+	Initially it was designed for small embeded system in electronic appliences like setup boxes.
+	
+	Firstly it was called Greentalk After it was called "OAK".OAK is symbol of strength and naional tree of many countries like 		germany,U.S.A,france.
+	
+	In 1995 Oak is renamed as "JAVA" because it was already a treadmark by oak technology.
+	
+	Initially developed by james gosling at Sun Microsystem.which is now a subsidiary of Oracle Corporationand relesed in 1995.
+	
+*Features of java:
+1.Simple:
+	java is very easy to learn and its syntax is simple,clean and easy to understand.
+
+2.Object Oriented :
+	java is object oriented programming language.object oriented means we organize our software as combination of diffrent types of objects.
+	it is a methodology that simplifies software development and maintanance by providing some rules.
+
+3.Plateform Independence:
+	java is plateform independence language becasuse we run java code in any plateform like linux,Windows,mac/os,sun solaris etc..
+	
+	java code is compile by the compiler and then it converts into a byte code and this byte code is plateform independent.
+
+4.Secure:
+	java is secure language with  java we can make virus free system.it is secure because,
+	-No explicit pointer
+	-java code run inside java virtual machine(JVM)
+
+5.Robust:
+	java is robust it means it is strong because...
+	-java has strong memory management.
+	-there is lack of pointers that avoids security issues
+	-java provides automatic garbage collection
+	-java provides exception handling and type checking mechanism in java
+
+6.Architecture natural:
+	java is architecture natural because it has no implementation depends on features for example size of primitive is fixed.
+
+7.Portable:
+	java is portable because it faciliates you to carry java byte code in any plateform.
+
+8.High Performance:
+	java is a faster than any interpreter programming language.
+
+9.Distributed:
+	In java there is built-in Supports for TCP/IP protocol so nework related applicationcan be easily built in java.
+
+10.Dynamic:
+	We create dynamic program in java Applets the small program of java which is to be downloaded from the Server and executed on Client system under the client OS.
+
+
+*Understanding JVM,JRE and JDK..
+JVM:
+	java virtual machine is abstract machine.it is called virtual machine because it is not physically exists.it is specification
+that provides runtime enviornment in which java bytecode can be executed.
+
+JVM perfom the following Tasks:
+-loads codes
+-verifies codes
+-execute codes
+-provides run time enviornment
+
+JRE:
+	Java Runtime Enviornment is a set of software tools which are used to developing java application.it is provide runtime enviornment.it is implementation of JVM it physically exits.it contains set of libraies plus others file that jvm uses at rumtime.
+
+
+JDK:
+	Java Development Kit is software development enviornment which is used to developing java application and applets.it physically exits.it includes JRE plus development tools.
+
+	JDK contains a private java virtual machine and few other resources like interpreter,compiler and archiver,documentation generator,etc..
+
+
+
+*Setting up an enviornment variable and IDE
+
+After installing the jdk you must set an enviornment variable.
+To set java enviornment variables:
+-JAVA_HOME
+-PATH
+Following are the steps for setting up the enviornment variable as follows:
+1.Click Start, Control Panel, System, and then Advanced system settings.
+
+2.In the System Properties dialog box, on the Advanced tab, click Environment Variables..
+
+3.Add the JAVA_HOME environment variable:
+	-In the System Variables section, click New.
+	-In the Variable name field, enter JAVA_HOME.
+	-In the Variable value field, enter the location where the JDK software is installed (for example, C:\Program Files\Java	
+	  \<java_version>)
+	-Click OK.
+4.Update the PATH environment variable to include the location of the Java executable files:
+	-In the System Variables section, select the PATH variable, and click Edit.
+	-In the Variable value field, insert %JAVA_HOME%\bin; in front of all the existing directories. Do not delete any existing 	          entries; otherwise, some existing applications may not run.
+	-Click OK.
+5.Exit the Control Panel.
+
+
+*Java Program Structure(Packages,Classes,Methods):
+	By systematically structuring your Java program, you can develop an efficient solution.
+
+	The basic structure of a Java program consists of the following components:
+
+	-Package: The package statement is used to group related classes.
+	-Import: The import statement is used to import classes from other packages.
+	-Class: The class is the fundamental building block of a Java program.
+	-Main Method: The primary method is the entry point of a Java program.
+
+Java syntax is based on the C programming language and is known for its readability and simplicity.
+Here are some critical syntax rules to keep in mind:
+
+-Java code is case sensitive.
+-Statements are terminated with a semicolon (;).
+-Blocks of code are enclosed in curly braces ({ }).
+
+* Write a simple "Hello World" java program.
+class Helllo
+public static void main(String args[])
+{
+	System.out.println("Hello World");
+}
+
+*Compile and Run the program using command-line tools(javac/java).
+COMPILE:
+	After writing a java code we must compile the java code to generate the class file which contains the byte code for your 	program.
+	for example we have example.java file for our program .we invoke java compiler by using javac commanad from the command prompt 	as..
+		javac <file_name.java>
+		javac example.java
+		
+	after writing a javac command the compiler will check for the errors and if there is no error it will generate a class file
+RUN:
+	after compiling the java program the class file we generated for each defined class.the class file(.class) is to be interpreted by JVM. JVM can be invoke..
+		java  <class-file-name>
+		java  example
+
+ 
+2.DATATYPES VARIABLES AND OPERATORS:
+*PRIMITIVE DATATYPES IN JAVA
+	 primitive datatypes are the buliding blocks of data manipulation.
+	 In java there are mainly eight primitive types
+1.BOOLEAN:-
+	In Java, the boolean data type represents a single bit of information with two possible states: true or false.
+	BOOLEAN A=TRUE;
+	BOOLEAN B=FALSE;
+
+2.BYTE:- 
+	The byte data type in Java is a primitive data type that represents an 8-bit signed two's complement integer. It has a range of values from -128 to 127. Its default value is 0.
+	byte a=10,b=-20;
+
+3.SHORT:-
+	The short data type in Java is a primitive data type that represents a 16-bit signed two's complement integer. It has a range of values from -32,768 to 32,767.
+	short a=10000;
+	short b=-5000;
+
+4.INT:-
+	The int data type in Java is a primitive data type that represents a 32-bit signed two's complement integer. It has a range of values from -2,147,483,648 to 2,147,483,647.
+	int a=100000;
+	int b=-200000;
+
+5.LONG:-
+	The long data type in Java is a primitive data type that represents a 64-bit signed two's complement integer. It has a wider range of values than int, ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. 
+	Its default value is 0.0F. 
+	
+	long a = 100000L; 
+	long b = -200000L; 
+
+6.FLOAT:-
+	The float data type in Java is a primitive data type that represents single-precision 32-bit IEEE 754 floating-point numbers. 	
+	It can represent a wide range of decimal values, but it is not suitable for precise values such as currency.
+	
+	float f=23405f;
+
+7.DOUBLE:-
+	The double data type in Java is a primitive data type that represents double-precision 64-bit IEEE 754 floating-point numbers. 	Its default value is 0.0d.
+	
+	double d=2.24;
+
+8.CHAR:-
+	The char data type in Java is a primitive data type that represents a single 16-bit Unicode character.
+	
+	char letter='A'; 
+
+*VARIABLE DECLARATION AND INITIALIZATION:-
+	variables is container which holds the values while java program is executed.A variable is assigned by the data types.
+
+	variable declaration require some properties are:
+	-datatype:it represent the type of value variable.
+	-variablename: The Java variable declaration requires a unique name. We prefer to declare small and understandable variable 			names.
+	-initial value:	Java language requires the initial value of the variable. Declare variable with initial value does not 					necessary in the main class. 
+	-semicolon:The semicolon represents the end of the variable declaration statement.
+	
+	for example:int a=10;
+
+example of variable declaration with inialization:
+public class CreateVariable {  
+    public static void main(String[] args)   
+{  
+	//variable declaration  
+        int student_id = 10;  
+        String student_name = "Java coder";  
+        
+       
+        System.out.println("student id "+student_id);  
+        System.out.println("Student Name "+student_name);  
+    }  
+}  
+
+
+*OPERATORS IN JAVA
+1.UNARY:-
+	The Java unary operators require only one operand. Unary operators are used to perform various operations.
+	-incrementing/decrementing a value by one
+	-negating an expression
+	-inverting the value of a boolean 
+
+	INCREMENT:++A,A++
+	DECREMENT:A--,--A
+EXAMLE:
+	public static void main(String args[])
+	{  
+		int x=10;  
+		System.out.println(x++);//10 (11)  
+		System.out.println(++x);//12  
+		System.out.println(x--);//12 (11)  
+		System.out.println(--x);//10  
+	}  
+2.ARITHMATIC:-
+	Java arithmetic operators are used to perform addition, subtraction, multiplication, and division. They act as basic mathematical operations.
+
+EXAMPLE:
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=5;  
+		System.out.println(a+b);//15  
+		System.out.println(a-b);//5  
+		System.out.println(a*b);//50  
+		System.out.println(a/b);//2  
+		System.out.println(a%b);//0  
+	}
+3.ASSIGNMENT:
+	Java assignment operator is one of the most common operators. It is used to assign the value on its right to the operand on its left.
+
+EXAMPLE:
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=20;  
+		a+=4;//a=a+4 (a=10+4)  
+		b-=4;//b=b-4 (b=20-4)  
+		System.out.println(a);  
+		System.out.println(b);  
+	}
+
+4.RELATIONAL:
+	Java Relational Operators are a bunch of binary operators used to check for relations between two operands, including equality, greater than, less than, etc.
+
+5.LOGICAL:
+	Logical operators are used to perform logical “AND”, “OR” and “NOT” operations, i.e. the function similar to AND gate and OR gate in digital electronics.
+
+	AND Operator ( && ) – if( a && b ) [if true execute else don’t]
+	OR Operator ( || ) – if( a || b) [if one of them is true to execute else don’t]
+	NOT Operator ( ! ) – !(a<b) [returns false if a is smaller than b]    
+
+*TYPE CASTING AND TYPE CONVERSION
+Type Casting:
+	in java type casting is when you assign a value of primitive data type to another type.
+	
+	In java there are two types of Casting:
+	1.Widening(automayically):-Converting smaller type to larger type size 
+		ex.bype->short->char->long->float->double
+	2.Narrowing(manually):-Converting larger type to smaller type size 
+		ex.double->float->long->int->char->short->byte
+
+Type Converstion:
+	 In type conversion, a data type is automatically converted into another data type by a compiler at the compiler time.
+	 In type conversion, the destination data type cannot be smaller than the source data type, that’s why it is also called 	 widening conversion.
+	 One more important thing is that it can only be applied to compatible data types.
+		int x=30;
+		float y;
+		y=x; 							
+
+*Write a program to demosttrate the use of diffrent data types.
+	public static void main(String[] args) 
+	{
+    	
+    		boolean b = true;
+    		System.out.println(b);    
+
+		byte b=124;
+		System.out.println(b); 
+		
+		short s=-200;
+		System.out.println(s);
+	
+		int i=10;
+		System.out.println(i);
+
+		long l=-458217644;
+		System.out.println(l);
+
+  	}
+
+*CREATE CALCULATOR USING ARITHMATIC AND RELATIONAL OPERATOR.
+		Scanner sc=new Scanner(System.in);
+		System.out.println("choose operattor +,-,/,*");
+		
+		char operator=sc.next().charAt(0);
+		
+		System.out.println("Enter number1");
+		int number1=sc.nextInt();
+		
+		System.out.println("Enter number2");
+		int number2=sc.nextInt();
+		int result;
+		switch(operator)
+		{
+			case '+':
+			result = number1+number2;
+			System.out.println("Addition of numbers is"+result);
+			break;
+			
+			case '-':
+			result=number1+number2;
+			System.out.println("Substraction of numbers is"+result);
+			break;
+			
+			case '/':
+			result=number1/number2;
+			System.out.println("Division of numbers is"+result);
+			break;
+			
+			case '*':  
+			result=number1*number2;
+			System.out.println("Multiplicationn of numbers is"+result);
+			break;
+		
+		}
+		
+
+*DEMOSTRATE IMPLICIT AND EXPLICIT TYPE CASTING PROGRAM.
+public class Implicitexplicit 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		//IMPLICIT TYPE CASTING
+			int x=25;
+			float y=x;
+			System.out.println(y);
+		//EXPLICIT TYPE CASTING
+			float f=2.5f;
+			int z=(int)(f);
+			System.out.println(z);
+	}
+
+}
+
+*CONTROL FLOW STATEMENTS:
+*IF -ELSE STATEMENTS:
+if statement:
+	Use the if statement to specify a block of Java code to be executed if a condition is true.
+	syntax:-
+		if(condition)
+		{
+			//block of code is executed when condition true
+		}
+	example:-
+		if (20 > 18) 
+		{
+  			System.out.println("20 is greater than 18");
+		}
+else statement:
+	Use the else statement to specify a block of code to be executed if the condition is false.
+	syntax:-
+		if(condition)
+		{
+			//block of code is executed when condition true
+		}
+		else
+		{
+			//block of code is executed when condition false
+		}
+	example:-
+		int time = 20;
+		if (time < 18) 
+		{
+  			System.out.println("Good day.");
+		}
+		else 
+		{
+  			System.out.println("Good evening.");
+		}
+*SWITCH CASE STATEMENTS:
+	Instead of writing many if..else statements, you can use the switch statement.
+
+	The switch statement selects one of many code blocks to be executed:
+	
+	syntax:-
+	switch(expression) {
+ 	 case x:
+    		// code block
+    		break;
+  	case y:
+    		// code block
+    		break;
+  	default:
+    		// code block
+	}
+	
+
+
+*LOOPS(FOR,WHILE,DO-WHILE):
+for loop:-
+	When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop.
+	syntax:-
+		for (statement 1; statement 2; statement 3) 
+		{
+  			// code block to be executed
+		}
+	Statement 1 is executed (one time) before the execution of the code block.
+
+	Statement 2 defines the condition for executing the code block.
+
+	Statement 3 is executed (every time) after the code block has been executed.
+	
+	example:-
+	print 0 to 4
+	for(i=0;i<=4;i++)
+	{
+		System.out.println(i);
+	}
+
+while:-
+	The while loop loops through a block of code as long as a specified condition is true.
+	
+	syntax:-
+	while (condition) 
+	{
+  		// code block to be executed
+	}
+	
+	example:-
+	int i = 0;
+	while (i < 5) 
+	{
+  		System.out.println(i);
+  		i++;
+	}
+
+Do..while:-
+	The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+	syntax:-
+	do 
+	{
+  		// code block to be executed
+	}
+	while (condition);
+	
+	example:-
+	int i = 0;
+	do 
+	{
+ 	 	System.out.println(i);
+ 	 	i++;
+	}
+	while (i < 5);
+
+
+
+*BREAK AND CONTINUE KEYWORDS:
+
+break:
+	 It was used to "jump out" of a switch statement.
+
+	 The break statement can also be used to jump out of a loop.
+
+	example:-
+	This example stops the loop when i is equal to 4:
+	for(i=0i<=10;i++)
+	{
+		if(i==4)
+		{	
+			break;
+		}
+		System.out.println(i);
+	}
+
+continue:
+	The continue statement breaks one iteration , if a specified condition occurs, and continues with the next iteration in the loop.
+	
+	example:-
+	
+	This example skips the value of 4
+	for (int i = 0; i < 10; i++) 
+	{
+ 	 	if (i == 4) 
+		{
+    			continue;
+  		}
+  		System.out.println(i);
+	}
+	
+*WRITE APROGRAM TO FIND GIVEN NUMBER IS ODD OR EVEN USING IF-ELSE STATEMENTS.
+	public class Chkoddeven {
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number");
+		int num=sc.nextInt();
+		if(num%2==0)
+		{
+
+			System.out.println("Enter number is even");
+		}
+		else
+		{
+			System.out.println("Enter number is odd");
+		}
+		
+
+	}
+
+}
+
+*IMPLEMENTS SIMPLE MENU-DRIVEN PROGRAM USING SWITCH CASE
+	public class Calculator {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner (System.in);  
+        int choice;  
+        do {  
+            System.out.println("Menu:");  
+            System.out.println("1. Addition");  
+            System.out.println("2. Subtraction");  
+            System.out.println("3. Multiplication");  
+            System.out.println("4. Division");  
+            System.out.println("5. Exit");  
+            System.out.print("Enter your choice: ");  
+            choice = scanner.nextInt();  
+            switch (choice) {  
+                case 1:  
+                    System.out.print("Enter first number: ");  
+                    double num1 = scanner.nextDouble();  
+                    System.out.print("Enter second number: ");  
+                    double num2 = scanner.nextDouble();  
+                    System.out.println("Result: " + (num1 + num2));  
+                    break;  
+                case 2:  
+                    System.out.print("Enter first number: ");  
+                    num1 = scanner.nextDouble();  
+                    System.out.print("Enter second number: ");  
+                    num2 = scanner.nextDouble();  
+                    System.out.println("Result: " + (num1 - num2));  
+                    break;  
+                case 3:  
+                    System.out.print("Enter first number: ");  
+                    num1 = scanner.nextDouble();  
+                    System.out.print("Enter second number: ");  
+                    num2 = scanner.nextDouble();  
+                    System.out.println("Result: " + (num1 * num2));  
+                    break;  
+                case 4:  
+                    System.out.print("Enter first number: ");  
+                    num1 = scanner.nextDouble();  
+                    System.out.print("Enter second number: ");  
+                    num2 = scanner.nextDouble();  
+                    if (num2 != 0) {  
+                        System.out.println("Result: " + (num1 / num2));  
+                    } else {  
+                        System.out.println("Error: Division by zero is not allowed.");  
+                    }  
+                    break;  
+                case 5:  
+                    System.out.println("Exiting the program. Goodbye!");  
+                    break;  
+                default:  
+                    System.out.println("Invalid choice. Please choose a valid option.");  
+            }  
+        } while (choice != 5);  
+          
+        scanner.close();  
+    }  
+}  
+*WRITE A PROGRAM TO DISPLAY FIBONACCI SERIES USING LOOP.
+class Fibonnic 
+{
+  public static void main(String[] args) 
+  {
+
+    int n = 10, firstTerm = 0, secondTerm = 1;
+    System.out.println("Fibonacci Series till " + n + " terms:");
+
+    for (int i = 1; i <= n; ++i) 
+    {
+      	System.out.print(firstTerm + ", ");
+
+       compute the next term
+      	int nextTerm = firstTerm + secondTerm;
+      	firstTerm = secondTerm;
+      	secondTerm = nextTerm;
+    }
+  }
+}
+
+4.CLASSES AND OBJECTS
+*Defining Class and Objecs.
+CLASS:-
+	A Class is like an object constructor, or a "blueprint" for creating objects.
+	
+	To create a class, use the keyword "class".
+	
+	Create a class named "Main" with a variable x:
+
+	public class Main 
+	{
+
+	 	int x = 5;
+	}
+
+OBJECT:-
+	Create an Object:
+		In Java, an object is created from a class. We have already created the class named Main, so 	now we can use this to create objects.
+
+	To create an object of Main, specify the class name, followed by the object name, and use the keyword 	"new".
+	
+	exmple:
+	public class Main 
+	{
+  		int x = 5;
+
+  		public static void main(String[] args) 
+		{
+    	
+			Main myObj = new Main();
+    			System.out.println(myObj.x);
+  		}
+	}
+
+
+*Constructor and Overloading.
+constructor:-
+	A constructor in Java is a special method that is used to initialize objects. 
+	
+	The constructor is called when an object of a class is created. It can be used to set initial values 	for object attributes.
+
+	example:-
+	// Create a Main class
+	public class Main 
+	{
+ 	 	int x;  // Create a class attribute
+
+  		// Create a class constructor for the Main class
+ 		 public Main() 
+		{
+    			x = 5;  // Set the initial value for the class attribute x
+  		}
+
+  		public static void main(String[] args) 
+		{
+    			Main myObj = new Main(); 
+    			System.out.println(myObj.x); // Print the value of x
+ 	 	}
+	}
+Constructor Overloading:-
+	In Java, we can overload constructors like methods. The constructor overloading can be defined as the concept of having more than one constructor with different parameters so that every constructor can perform a different task.
+	
+	example:
+	
+	public class Student
+	 {  
+		//instance variables of the class  
+		int id;  
+		String name;  
+  
+		Student()
+		{  
+			System.out.println("this a default constructor");  
+		}  
+  
+		Student(int i, String n)
+		{  
+			id = i;  
+			name = n;  
+		}  
+  
+		public static void main(String[] args) 
+		{  
+			//object creation  
+			Student s = new Student();  
+			
+			System.out.println("Student Id : "+s.id + "\nStudent Name : "+s.name);  
+  
+			System.out.println("\nParameterized Constructor values: \n");  
+			Student student = new Student(10, "David");  
+			
+		}  
+	}  
+
+*Object Creation,Accessing member of Class
+Create an Object:
+		In Java, an object is created from a class. We have already created the class named Main, so 	now we can use this to create objects.
+
+	To create an object of Main, specify the class name, followed by the object name, and use the keyword "new".
+	
+	example:
+	public class Main 
+	{
+  		int x = 5;
+
+  		public static void main(String[] args) 
+		{
+    	
+			Main myObj = new Main();
+    			System.out.println(myObj.x);
+  		}
+
+	}
+
+*CREATE CLASS STUDENT  WITTH ATTRIBUTE NAME,AGE AND METHOD TO DISPLAY THE DETAILS.
+publlic class Student
+{
+	display(string name,int age)
+	{	
+		System.out.println("Student Name: "+name+" "+"Student age: "+age); 
+	}
+	public void main(String args[])
+	{
+		Student s=new Student();
+		s.display("dharti",28);
+		
+	}
+	
+}
+*CREATE MLTIPLE CONSTRUCTOR IN CLASS AND DEMOSTRATE CONSTRUCTO OVERLOADING.
+public class Constructoroverload {
+	Constructoroverload()
+	{
+		
+		System.out.println("hello constructor");	
+	}
+	Constructoroverload(String name)
+	{
+		System.out.println("Welcome :"+name);
+	}
+	Constructoroverload(String name,int age)
+	{
+		System.out.println("Welcome :"+name+" "+age+" "+"years");
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		
+		Constructoroverload obj=new Constructoroverload();
+		Constructoroverload obj1=new Constructoroverload("Dharti");
+		Constructoroverload obj2=new Constructoroverload("Dharti",28);
+		
+		
+
+	}
+
+}
+*IMPLEMENTS A SIMPLE CLASS WITH GETTERS AND SETTERS FOR ENCAPSULATION.
+public class Person {
+    private String name;
+    private int age;
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter for age
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+
+        // Set values using setter methods
+        person.setName("John");
+        person.setAge(30);
+
+        // Retrieve values using getter methods
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+    }
+}
+5.METTHODS IN JAVA
+*DEFINING METHODS
+A method is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a method.
+
+Methods are used to perform certain actions, and they are also known as functions.
+
+Create a Method:-
+	A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). 
+	Java provides some pre-defined methods, such as System.out.println(), but you can also create your own methods to perform certain actions
+
+example:-
+public class Main 
+{
+ 	 static void myMethod() 
+	{
+    		// code to be executed
+  	}
+}
+
+*METHOD PARAMETERS AND RETURN TYPES.
+	Information can be passed to methods as a parameter. Parameters act as variables inside the method.
+
+	Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+	
+	The following example has a method that takes a String called fname as parameter.
+	
+	public class Main 
+	{
+  		static void myMethod(String fname) 
+		{
+    			System.out.println(fname + " Refsnes");
+  		}
+
+  	public static void main(String[] args) 
+	{
+    		myMethod("Liam");
+   
+  	}
+}
+
+*METHOD OVERLOADING
+	With method overloading, multiple methods can have the same name with different parameters.
+	
+example:
+class Adder 
+{  
+    // Method to add two integers  
+    static int add(int a, int b) 
+    {  
+        return a + b;  
+    }  
+    // Method to add three integers  
+    static int add(int a, int b, int c) 
+    {  
+        return a + b + c;  
+    }  
+}  
+public class Overloading{  
+    public static void main(String[] args) {  
+        // Calling the add method with two integers  
+        System.out.println(Adder.add(11, 11)); // Output: 22  
+        // Calling the add method with three integers  
+        System.out.println(Adder.add(11, 11, 11)); // Output: 33  
+    }  
+}  
+
+*STATIC METHODS AND VRIABLES:
+	Static variables and methods belongs to a class and are called with class name rather than using objects variables like classname.methodname().
+
+	There is only one copy of a static variable or method for the whole class. For example, the main method is static because there should only be 1 main method.
+
+	Static methods can be public or private.
+
+	The static keyword is placed right after the public/private modifier and right before the type of variables and methods in their declarations.
+
+example:-
+class ClassName 
+{
+  // static variable
+  public static type variableName;
+
+  // static method
+  public static returnType methodName(parameters) 
+  {
+        // implementation not shown
+  }
+}
+
+	// To call a static method or variable, use the Class Name
+	System.out.println(ClassName.staticVariable);
+	ClassName.staticMethod();
+
+*WRITE A PROGRAM TO FIND THR MAXIMUM OF THREE NUMBERS USING METHODS.
+
+class FindMaxOfThree {
+  
+    // Function to find the biggest of three numbers
+    static int biggestOfThree(int x, int y, int z)
+    {
+
+        return z > (x > y ? x : y) ? z : ((x > y) ? x : y);
+    }
+
+    
+    public static void main(String[] args)
+    {
+
+        
+        int a, b, c;
+
+        // Variable holding the largest number
+        int largest;
+        a = 5;
+        b = 10;
+        c = 3;
+        // Calling the above function in main
+        largest = biggestOfThree(a, b, c);
+
+        // Printing the largest number
+        System.out.println(largest
+                           + " is the largest number.");
+    }
+}
+
+*IMPLEMENT METHOD OVERLOADING BY CREATING METHODS FOR DIFFRENT DATA TYPES.
+
+class Method_Overloading {
+    double area(double l, int b) //two parameters with double type
+    {
+        return (l*b);
+    }
+    float area(int s) //one parameter with float return type
+    {
+        return (s*s);
+    }
+ 
+    public static void main(String[] args) {
+        Method_Overloading obj = new Method_Overloading();
+        System.out.println("Area of Rectangle: " +obj.area(5.55, 6)); 
+        System.out.println("Area of Square: " +obj.area(3)); 
+    }
+}
+*CREATE CLASS WITH STATIC VARIABLS AND METHODS TO DEMOSTRATE THEIR USE.
+class JavaExample3{
+  static int var1=10;
+  static String var2="hello";
+  //This is a Static Method
+  static void disp(){
+      System.out.println("Var1 is: "+var1);
+      System.out.println("Var2 is: "+var2);
+  }
+  public static void main(String args[]) 
+  {
+      disp();
+  }
+}
+
