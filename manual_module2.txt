@@ -1,0 +1,387 @@
+					MODULE-2 ASSIGNMENT
+*What is Exploratory Testing?
+Exploratory Testing is a type of software testing in which the tester is free to select any possible methodology to test the software.
+
+it is unscripted approach to software testing,software developers use their learning ,knowledge,skills and attributes.and abilities to test developed by themselves.
+
+exploratory testing checks the functionality and operation of software as well as identify the function  and technical faults in it.
+
+Exploratory testing aims to optimize and improve the software in every possible way.
+
+* what is traceability matrix?
+The Traceability Matrix is an essential document used during the software development lifecycle of a product, and it ensures completeness and transparency of the underlying product. 
+
+It is also called Cross Reference Matrix (CRM) or Requirement Traceability Matrix (RTM).
+
+*What is Boundary value testing?
+Boundary testing is a black-box testing technique that software developers often use to check the errors at the boundaries or extreme ends of a given input domain. 
+
+An input domain comprises all the possible inputs available in a software program.
+
+*What is Equivalence partitioning testing?
+Equivalence Partitioning is a black box technique to identify test cases systematically and is often the first technique to be applied when designing test cases. 
+
+Let us consider a program that separates integers into positive or negative. And accepts any number between -5 and + 5.
+
+
+
+*What is Integration testing?
+
+integration testing is testing process in which individual units or a components are combined and test as a group.
+
+Integration testing is done by specific integration testers or test team.
+
+there are two types of integration testing approach
+1.big bang integration
+2.incremental integration testing
+
+1.Big bang integration:
+	All components or modules are  integrated simutaneously and testing is done as whole.
+
+2.Incremental Integration testing:
+	Modules are integrated one by one  and testing is done after each new module is added.
+	
+
+	Top-Down :Start testing from top level modules and integrates downwords.
+	Bottom-up:Start testing from bottom level modules and inttegrates upwards.
+
+
+*what determine the level of risks?
+the level of risks is determine by the two factors.
+1.Likehood(probability):
+2.Impact:
+
+1.Likehood:
+	this refers how likely it is risk will occur.It assesses the probability or frequency of the event happening. 
+
+categories of likehood:
+-very likely
+-likely
+-unlikely
+-very unlikely
+
+2.Impact:
+	This refers to the consequences or potential damage if the risk were to occur. It measures the seriousness of the event or loss.
+
+the factors influencing impact includes:
+-financial loss
+-reputation damage
+-legal or regulatory consequences
+-operational impact
+-safely and health
+-Strategic Consequences
+
+categories of impact:
+-Critical
+-Major
+-Moderate
+-Minor
+
+*What is alpha Testing?
+alpha testing is a type of testing that is perfomedto identify bugs or issues  before the software is released  for the wider audience.
+
+alpha testing is essential step to ensuring the  quality and functionalityof the software before it goes live.
+
+alpha testing is usually conducted internally within the development team or by dedicating QA  team within the company.
+
+the main goal of the  alpha testing is to find and fix the bugs and defects  in the software before it made availabe to the external users.
+
+Steps involves in alpha testing:
+1.planning
+2.test case design
+3.test execution
+4.bug logging
+5.fixing issue
+6.retesting
+7.Prepare for beta testing
+
+*what is beta testing?
+beta testing is performed after alpha testing is done .it is a final round of testing before software or a product is officially released to the public.
+
+the purpose of the beta testing is gather feedback of the real users and identify the bugs that may have missed during earlier testing and ensure that the software function correctly in real world environment. 
+
+beta testing is done by the group of external  testers who is not part of the development or QA team
+
+
+* What is component testing?
+component testing is type of testing in which individual units are  tested .ensure that they working as expected.
+
+It’s typically used to test smaller parts of an application, such as functions, methods, or classes, in order to verify their correctness before integrating them into larger systems.
+
+* What is functional system testing? 
+functional system refers to a system that is designed to perform specific, well-defined tasks or functions. 
+
+In various contexts, it can mean different things:
+
+1.In softwarre development:
+	A functional system refers to a software system or application that performs certain functionalities as expected. 
+	It is focused on meeting the functional requirements, i.e., what the system is supposed to do, rather than the technical aspects of how it is implemented.
+
+2. In Information Systems:
+	A functional system in this context refers to a subsystem of an organization that supports specific functions, such as finance, HR, sales, or marketing.
+	 Each functional system provides the tools and processes needed for a department to carry out its activities effectively.
+
+3. In Business:
+	A functional system is a system that supports or manages the functional activities of a business. 
+
+*What is Non-Functional TestinG?
+The non functional testing is executed on non functional requirement of the system or an application.
+
+the non functional testing focus on how the system behave or performs under some condition.
+
+there are many types of non functional testing
+-Usability Testing
+-Compatibility Testing
+-GUI Testing
+-Security Testing
+-Performance Testing
+-Reliability Testing
+-Maintainability Testing
+
+* What is GUI Testing?
+	GUI Testing (Graphical User Interface Testing) is the process of testing the user interface of an application to ensure it meets the required functionality, design specifications, and usability standards. 
+	This testing focuses on the elements of the user interface (UI), including buttons, icons, text boxes, menus, windows, and other visual elements that users interact with.
+
+* What is Adhoc testing?
+Adhoc testing is an informal testing type with an aim to break the system.
+
+It does not follow any test design techniques to create test cases.
+
+Adhoc testing can be achieved with the testing techniqu called Error Guessing.
+
+Error guessing can be done by the people having enough experience on the system to “guess” the most likely source of errors.
+
+*What is load testing?
+Load Testing is a type of performance testing that is conducted to assess how a system, application, or website performs under normal and peak load conditions.
+
+The main goal of load testing is to ensure that the system can handle the expected load without performance degradation, crashes, or failures.
+
+*What is stress Testing?
+Stress Testing is a type of performance testing that focuses on determining the limits of a system by subjecting it to extreme conditions, typically beyond its normal operational capacity.
+
+*What is white box testing and list the types of white box testing?
+White Box Testing, also known as Clear Box Testing or Structural Testing, is a software testing method that focuses on testing the internal structures, workings, and logic of the system.
+
+types of white box testing:
+Unit testing
+Integration testing
+Code Coverage Analysis
+Branch Testing
+Path Testing
+Loop Testing
+Mutation Testing
+
+*What is black box testing? What are the different black box testing techniques?
+Testing, either functional or non-functional,without reference to the internal structure of the component or system. 
+
+Specification-based testing technique is also known as ‘black-box’or input/output driven testing techniques because they view the software as a black-box with inputs and outputs.
+	 	
+There are four specification-based or black-box technique:
+Equivalence partitioning
+Boundary value analysis
+Decision tables
+State transition testing
+Use-case Testing
+Other Black Box Testing
+Syntax or Pattern Testing
+
+*Mention what are the categories of defects?
+1.functional
+2.performance
+3.security
+4.usability
+5.compability
+6.configuration
+7.regression
+8.interface
+9.data
+10.logical
+
+*Mention what bigbang testing is?
+Big Bang Testing is a software testing approach where all or most of the components of the system are integrated and tested simultaneously, without incremental integration or staged testing.
+
+*What is the purpose of exit criteria?
+Exit Criteria are predefined conditions or benchmarks that must be met before the testing phase can be considered complete.
+
+The purpose of exit criteria is to provide measurable and objective standards to ensure that testing is thorough and that the product meets the desired quality levels.
+
+*When should "Regression Testing" be performed?
+Regression Testing is a type of software testing that ensures that recent changes or enhancements to the software (such as new features, bug fixes, or updates) have not inadvertently introduced new defects or caused existing functionality to break.
+
+It is an essential part of the software development and maintenance lifecycle.
+
+*What is 7 key principles? Explain in detail?
+1.Testing shows the presence of defects – Testing can find defects but cannot prove their absence.
+
+2.Exhaustive testing is impossible – Testing all combinations of inputs and paths is not feasible.
+
+3.Early testing – Start testing as early as possible in the SDLC to catch defects earlier.
+
+4.Defects cluster – Focus on the high-risk areas where defects are likely to be more concentrated.
+
+5.Testing is context-dependent – The type of testing should be adapted to the specific context of the application.
+
+6.Absence of errors is a fallacy – A defect-free product may still fail to meet user needs and business goals.
+
+7.Testing is a process of continuous improvement – Continuously learn from past testing experiences to improve future testing efforts.
+
+*Difference between QA v/s QC v/s Tester
+QA(Qaulity Assurance):
+focus:process-oriented
+
+Goal: Ensure the development processes lead to a high-quality product.
+
+Activities:
+
+	Establishing standards, guidelines, and best practices for development 	and 	testing.
+
+	Conducting process audits.
+
+	Planning and designing test strategies.
+
+	Reviewing and improving workflows to prevent defects.
+
+Responsibility: Proactive; works to prevent issues before they occur.
+
+Example: Creating a checklist to ensure all development stages meet predefined quality 	 standards.
+
+
+2. Quality Control (QC)
+Focus: Product-oriented
+
+Goal: Identify and fix defects in the product.
+
+Activities:
+
+	Performing functional and non-functional testing.
+
+	Inspecting and verifying the product against requirements.
+
+	Reporting and tracking defects.
+
+	Responsibility: Reactive; focuses on detecting and resolving issues after they 	occur.
+
+Example: Testing the application to ensure it meets user requirements and is free of critical bugs.
+
+3. Tester
+Focus: Execution-oriented
+
+Goal: Execute tests to find defects in the product.
+
+Activities:
+
+	Designing test cases based on requirements.
+
+	Executing test cases manually or using automation tools.
+
+	Reporting and verifying bugs.
+
+	Collaborating with developers for issue resolution.
+
+Responsibility: Works within the QC framework to ensure the product meets the desired quality.
+
+Example: Running test scripts to check if the login functionality works correctly.
+
+*Difference between Smoke and Sanity?
+
+Smoke Testing:
+
+Purpose: 
+Smoke testing is a high-level type of testing that checks the basic functionality of the software to ensure that it “does not crash” and can perform the most critical functions. It verifies that the software build is stable enough to proceed with more in-depth testing.
+
+Context: 
+It is typically performed after the build is received from the development team and before it is sent for more thorough testing.
+
+Example:	
+	 If a new version of an app is built, smoke testing would check whether it launches, whether the main page loads, and whether critical features like logging in and saving data work.
+
+Sanity Testing:
+
+Purpose: 
+Sanity testing is a subset of regression testing where testers verify whether a specific functionality or bug fix works as expected. It is usually a deeper form of testing than smoke testing and focuses on checking the rationality of the particular functionality after a change or update.
+
+Context: 
+Sanity testing is performed after receiving a build that has specific fixes or changes, and it checks whether the specific changes are working correctly without impacting other areas of the application.
+
+Example: 
+	After a bug is fixed in the payment module of an e-commerce app, sanity testing would check that the payment process now works properly, ensuring that no new issues have been introduced.
+
+*Difference between verification and Validation
+
+Verification:
+Verification is the process of checking whether the software system meets the specified requirements at each stage of the development process. It answers the question: "Are we building the product right?"
+
+It involves reviewing, inspecting, and evaluating work products like code, design, and documentation to ensure that the software is being built according to the specifications.
+
+Validation:
+Validation is the process of evaluating the software to ensure that it meets the business requirements and the needs of the user. It answers the question: "Are we building the right product?"
+
+Validation checks whether the final product fulfills the intended use, and whether it behaves as expected when used by the end users.
+
+*Explain types of Performance testing.
+there are amny types of performance testing
+1.Load  testing:
+purpose:Tests the system under expected load.
+
+focus:System performance under normal load
+
+example:Checking an e-commerce site’s ability to handle 1,000 users at once.
+
+2.Stress Testing:
+purpose:Tests the system under extreme conditions to identify the breaking point.
+
+focus:System behavior under high stress
+
+example:Testing a website with 10,000 users to see how it performs under stress.
+
+3.Spike testing:
+purpose:Tests the system under sudden, sharp increases in load.
+
+focus:Sudden load bursts
+
+example:Simulating a sale or event with a sudden increase in website traffic.
+
+4.Endurance (Soak) Testing:
+purpose:Tests the system under normal load for an extended period to detect performance         degradation.
+focus:Long-term performance
+examle:Running an app for several hours to check for memory leaks.
+
+*What is Error, Defect, Bug and failure?
+Error:
+	An error refers to a human mistake made by a developer or team member during the development process. It is a misjudgment or incorrect action that leads to incorrect code or incorrect logic being implemented..
+
+Defect:
+	A defect (also called a fault) is a flaw or imperfection in the software that causes the application to behave incorrectly or not as expected. A defect is typically introduced into the code due to an error.
+
+Bug:
+	A bug is a specific type of defect that causes the software to behave unexpectedly or incorrectly. The term "bug" is often used in an informal way to refer to any kind of defect in the software.
+
+failure:
+	A failure occurs when the system does not perform as expected or cannot fulfill its intended functionality. 
+
+	A failure is the manifestation of defects or bugs when the software is being used in real-world conditions. It is the observable incorrect behavior of the system.
+
+*Difference between Priority and Severity
+Priority:
+defination:Measures the urgency of fixing the defect based on business needs or user 	   impact.
+
+focus:Concerned with how soon the defect needs to be fixed.
+
+impact:Reflects the urgency of fixing the defect.
+
+example:A high-priority defect might be a broken login button, while a low-priority issue might be a misplaced icon.
+
+Severity:
+defination:Measures the seriousness of the defect and its impact on the system's            functionality.
+
+focus:Concerned with how much the defect affects the system.
+
+
+impact:Reflects the degree of damage or malfunction caused by the defect.
+
+example:A crash in the application or data corruption is high severity.
+
+*What is Bug Life Cycle?
+The Bug Life Cycle, also known as the Defect Life Cycle, is the journey that a bug or defect goes through from the time it is identified to its resolution and closure. 
+
+It describes the various stages that a bug undergoes during its existence in the software development process.
