@@ -1,0 +1,800 @@
+						Assignments Module – 6 (Core Java)
+1.W.A.J.P to Take three numbers from the user and print the greatest number.
+package org.tcs;
+
+import java.util.Scanner;
+
+public class FindMax {
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter Numbber1");
+		int num1=sc.nextInt();
+		
+		System.out.println("Enter Number2");
+		int num2=sc.nextInt();
+		
+		System.out.println("Enter Number3");
+		int num3=sc.nextInt();
+		//int a=10,b=20,c=30;
+		if(num1>num2 && num1>num3)
+		{
+			System.out.println("Number1 is max"+num1);
+		}
+		else if(num2>num1 && num2>num3)
+		{
+			System.out.println("Number2  is max"+num2);
+		}
+		else
+		{
+			System.out.println("Number3 is max");
+		}
+	}
+}
+ 
+
+W.A.J.P in Java to display the first 10 natural numbers using while loop.
+
+package Assignment;
+
+public class NaturalNumber {
+	public static void main(String[] args) {
+		int num=1;
+		int count=10;
+		System.out.println("First 10 Natural Numbers Are:");
+		while(num<=count)
+		{
+			System.out.println(num);
+			num++;
+		}
+	}
+
+}
+
+
+ W.A.J.P to find factorial for Given Number.
+
+import java.util.Scanner;
+
+public class Factorial {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number");
+		int num=sc.nextInt();
+		int fact=1;
+		
+		
+		
+		for(int i=1;i<=num;i++)
+		{
+			fact=fact*i;
+		}
+		System.out.println(fact);
+		}
+		
+	}
+
+
+ W.A.J.P to check given number is Prime or not?
+
+package Assignment;
+
+import java.util.Scanner;
+
+public class Prime {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number");
+		int num=sc.nextInt();
+		//int num=20;
+		int count =0;
+		for(int i=1;i<=num;i++)
+		{
+			if(num%2==0)
+			{
+				count++;
+				
+			}
+		}
+		if(count>2)
+		{
+			System.out.println("Number is Not Prime");
+		}
+		else
+		{
+			System.out.println("Number is Prime");
+		}
+		
+	
+		
+	
+
+}
+}
+
+
+ W.A.J.P to check given number is Armstrong or not?
+package Assignment;
+
+import java.util.Scanner;
+
+public class Amstrong {
+	public static void main(String[] args) {
+		int sum=0,res,temp;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number");
+		int num=sc.nextInt();
+		temp=num;
+		while(num>0)
+		{
+			res=num%10;
+			num=num/10;
+			sum=sum+(res*res*res);
+		}
+		if(temp==sum)
+		{
+			System.out.println(temp+"Is Amstrong Number");
+		}
+		else
+		{
+			System.out.println(temp+"Is not Amstrong Number");
+		}
+		
+	}
+
+}
+
+W.A.J.P for create Fibonacci Series.
+
+package Assignment;
+
+public class Fibbonic_series {
+	public static void main(String[] args) {
+		 int n = 15, t1 = 0, t2 = 1;
+		    System.out.println("Fibonacci Series of " + n + " terms:");
+
+		    for (int i = 1; i <= n; ++i) {
+		      System.out.print(t1 + " ");
+
+		      // compute the next term
+		      int sum = t1 + t2;
+		      t1 = t2;
+		      t2 = sum;
+
+	}
+		
+	}
+
+	 
+}
+
+W.A.J.P to Print pattern Given Below.
+1)
+1
+12
+123
+1234
+12345
+
+		int row=5;
+		for(int i=0;i<=row;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+
+
+2)
+1
+01
+101
+01010
+101010
+
+	
+		int row=5;
+		for(int i=1;i<=row;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				if((i+j)%2==0)
+				{
+					System.out.print("0");
+				}
+				else
+				{
+					System.out.print("1");
+				}
+			}
+			System.out.println();
+		}
+
+3)
+1
+2 2
+3 3 3
+4 4 4 4
+
+		int row=4;
+		for(int i=1;i<=row;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(i+" ");
+			}
+			System.out.println();
+		}
+
+
+W A P to compute the sum of the first 100 prime numbers.
+
+package Assignment;
+
+public class Sumprime {
+
+
+	public static void main(String[] args) {
+		
+		//Sum of first 100 prime numbers
+		int count=0,sum=0;
+		for(int num=1;num<=100;num++)
+		{
+			count=0;
+			for(int i=2;i<=num/2;i++) {
+		    	if(num%i==0)
+		    	{
+		    		count++;
+		    		break;
+		    	}
+			}
+			if(count==0 && num!=1)
+			{
+				sum=sum+num;
+			}
+		     
+		}
+		System.out.println("Sum Of Prime Numbers Between 1 to 100 is   "+sum);
+	}
+
+}
+
+W A P to sum values of an array.
+
+package Assignment;
+
+import java.util.Scanner;
+
+public class SumOfArray {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter elements");
+		int s=sc.nextInt();
+		int[] num=new int[s];
+		 System.out.println("Enter the elements:");
+	        for (int i = 0; i < s; i++)
+	        {
+	            num[i] = sc.nextInt();
+	        }
+	        //calculate the sum of numbers
+	        int sum=0;
+	        for(int num1:num)
+	        {
+	        	sum+=num1;
+	        }
+	        System.out.println("Sum: " + sum);
+	}
+
+}
+
+
+W A P to calculate the average value of array elements.
+
+package Assignment;
+
+import java.util.Scanner;
+
+public class AvgOfArray {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter elements");
+		int s=sc.nextInt();
+		int[] num=new int[s];
+		 System.out.println("Enter the elements:");
+	        for (int i = 0; i < s; i++)
+	        {
+	            num[i] = sc.nextInt();
+	        }
+	     // Calculate average
+	        int sum=0;
+	        double average = (double) sum / s;  
+	        
+	       
+	        System.out.println("Average: " + average);
+	}
+
+}
+
+
+W A P to find the index of an array element.
+
+package Assignment;
+
+import java.util.Scanner;
+
+public class ArrayIndex {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number of Elements in Array");
+		int num=sc.nextInt();
+		int[] array=new int[num];
+	System.out.println("Enter "+num+"elements");
+	for(int i=0;i<num;i++)
+	{
+		array[i]=sc.nextInt();
+		
+	}
+	System.out.println("Enter Array Elements and their indices");
+	for(int i=0;i<num;i++)
+	{
+		System.out.println("index"+ i + ":" +array[i]);
+	}
+		
+		
+		
+	}
+
+}
+
+
+W A P to find the maximum and minimum value of an array
+package Array;
+
+public class FindMax {
+	public FindMax()
+	{
+		//find maximum
+		/*int arr[]= {1,2,3,4,5};
+		int max=arr[0];
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]>max)
+			{
+				max=arr[i];
+			}
+			
+		}*/
+	//find minimum	
+		int arr[]= {1,2,3,4,5};
+		int min=arr[0];
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]<min)
+			{
+				min=arr[i];
+			}
+			
+		}
+		
+		System.out.println("Smallest Elements In Array is"+min);
+	}
+	public static void main(String[] args) {
+		new FindMax();
+	}
+
+}
+
+
+ W A P to compare two strings.
+package Assignment;
+
+import java.util.Scanner;
+
+public class CampareString {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter First String");
+		String s1=sc.next();
+		
+
+		System.out.println("Enter second String");
+		String s2=sc.next();
+		
+		if(s1.equals(s2))
+		{
+			System.out.println("Two Strings Are Equals");
+		}
+		else
+		{
+			System.out.println("Two Strings Are Diffrent");
+		}
+		
+	}
+
+
+
+}
+
+W A P to concatenate a given string to the end of another string.
+package Assignment;
+
+import java.util.Scanner;
+
+public class ConcateString {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter First String");
+		String s1=sc.next();
+		
+		System.out.println("Enter Second String");
+		String s2=sc.next();
+		
+		String Concate=s1+s2;
+		System.out.println("Afer Concating the string is "+Concate);
+	}
+
+}
+
+ W A P to demonstrate try catch block.
+package Assignment;
+
+import java.util.Scanner;
+
+public class Try_Catch {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		try
+		{
+			System.out.println("Enter Number1");
+			int num1=sc.nextInt();
+			
+			System.out.println("Enter Number2");
+			int num2=sc.nextInt();
+			
+			double result=num1/num2;
+			System.out.println("Division Of Two Numbers"+result);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Throws Exception");
+		}
+	}
+
+}
+
+
+
+
+
+
+ WAP to demonstrate multiple catch blocks
+
+W A P to iterate through all elements in an array list.
+
+public class ArrayListData {
+	public static void main(String[] args) {
+		ArrayList<Integer> nums=new ArrayList<>();
+		nums.add(10);
+		nums.add(20);
+		nums.add(30);
+		
+		for(int num:nums)
+		{
+			System.out.println(nums);
+		}
+		 System.out.println("\nUsing for loop with index:");
+	        for (int i = 0; i < nums.size(); i++) {
+	            System.out.println(nums.get(i));
+	        }
+		
+		
+	}
+
+}
+
+W A P to update specific array element by given element.
+package Assignment;
+import java.util.*;
+public class ReplaceArrayElements {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int[] array= {10,20,30,40,50};
+		System.out.println("Original Array");
+		for(int num:array)
+		{
+			System.out.println(num);
+		}
+		System.out.println();
+		
+		System.out.println("Enter the index replace with elements"+(array.length-1));
+		int index=sc.nextInt();
+		
+		 if (index >= 0 && index < array.length) 
+		 {
+	            // Ask the user for the new value
+	            System.out.print("Enter the new value: ");
+	            int newValue = sc.nextInt();
+
+	            // Update the array element
+	            array[index] = newValue;
+
+	            // Display the updated array
+	            System.out.println("Updated array:");
+	            for (int num : array)
+	            {
+	                System.out.print(num + " ");
+	            }
+	            System.out.println();
+	        } 
+		 	else
+		 	{
+	            System.out.println("Invalid index! Please run the program again with a valid index.");
+	        }
+		
+	}
+
+}
+
+
+*Write a program to romove third elements from array.
+package Assignment;
+
+import java.util.ArrayList;
+
+public class RemoveElementsArrayList 
+{
+	public static void main(String[] args) 
+	{
+	ArrayList<Integer> nums=new ArrayList<>();
+	nums.add(10);
+	nums.add(11);
+	nums.add(12);
+	nums.add(14);
+
+	 if (nums.size() >= 3) 
+	 {
+         // Remove the third element (index 2)
+         nums.remove(2);
+         System.out.println("ArrayList after removing the third element: " + nums);
+     } 
+	 else 
+	 {
+         System.out.println("The ArrayList has less than 3 elements, no removal performed.");
+     }
+	
+	
+}}
+
+*W A P to Copy one array into another
+
+package Array;
+
+import java.util.Scanner;
+
+public class CopyOnearrytoanother {
+	
+	public CopyOnearrytoanother() {
+		// TODO Auto-generated constructor stub
+		
+		   Scanner scanner = new Scanner(System.in);
+
+	   
+	        System.out.print("Enter the number of elements in the array: ");
+	        int size = scanner.nextInt();
+
+	       
+	        int[] originalArray = new int[size];
+
+	       
+	        System.out.println("Enter the elements of the array:");
+	        for (int i = 0; i < size; i++) {
+	            originalArray[i] = scanner.nextInt();
+	        }
+
+	        // Copying the array
+	        int[] copiedArray = new int[size];
+	        for (int i = 0; i < size; i++) {
+	            copiedArray[i] = originalArray[i];
+	        }
+	        
+	        //display elements
+	        System.out.println("Copied array:");
+	        for (int element : copiedArray) {
+	            System.out.print(element + " ");
+	        }
+	}
+	
+	public static void main(String[] args) {
+		  new CopyOnearrytoanother();
+		
+	}
+
+}
+
+ W A P to reverse an array of integer values
+package Assignment;
+import java.util.*;
+public class ReverseArray {
+public static void main(String[] args) {
+	
+
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Size of Array");
+	int size=sc.nextInt();
+	
+	int[] array=new int[size];
+	System.out.println("Enter"+size+"integer Values:" );
+	
+	for(int i=0;i<size;i++)
+	{
+		array[i]=sc.nextInt();
+	}
+	
+	System.out.println("Original Array");
+	for(int num:array)
+	{
+		System.out.println(num+" ");
+	}
+	System.out.println();
+	
+	System.out.println("Reverse Array");
+	for(int i=size-1;i>=0;i--)
+	{
+		System.out.println(array[i]);
+	}
+}
+}
+
+W A P to find the second largest element in an array
+package Assignment;
+
+import java.util.Scanner;
+
+public class SecondlargeArray {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter  Array Size");
+		int size=sc.nextInt();
+		
+		if(size>2)
+		{
+			System.out.println("Array must have atleast 2 elements");
+		}
+		
+		int[] array=new int[size];
+		System.out.println("Enter"+size+"integer Values");
+		for(int i=0;i<size;i++)
+		{
+			array[i]=sc.nextInt();
+		}
+		 int largest = Integer.MIN_VALUE;
+	        int secondLargest = Integer.MIN_VALUE;
+
+	        for (int num : array) 
+	        {
+	            if (num > largest) 
+	            {
+	                secondLargest = largest;
+	                largest = num;
+	            } 
+	            else if (num > secondLargest && num != largest) {
+	                secondLargest = num;
+	            }
+	        }
+	        if (secondLargest == Integer.MIN_VALUE) 
+	        {
+	            System.out.println("No second largest element found (all elements are identical).");
+	        }
+	        else 
+	        {
+	            System.out.println("The second largest element is: " + secondLargest);
+	        }
+
+	}
+
+}
+
+W.A.J.P. Create an abstract class 'Parent' with a method 'message'. It
+has two subclasses each having a method with the same name
+'message' that prints "This is first subclass" and "This is second
+subclass" respectively.
+Call the methods 'message' by creating an object for each subclass
+
+package Assignment;
+abstract class parent2
+{
+	abstract void message();
+}
+class firstmsg extends parent2
+{
+
+	@Override
+	void message() {
+	System.out.println("This is First Subclass");
+		
+	}
+	
+}
+class secmsg extends parent2
+{
+
+	@Override
+	void message() {
+		System.out.println("This is Second Subclass");
+		
+	}
+	
+}
+public class Abstraction_msg {
+	public static void main(String[] args) {
+		
+		firstmsg f=new firstmsg();
+		f.message();
+		
+		secmsg s=new secmsg();
+		s.message();
+		
+		
+		
+	}
+
+}
+ W.A.J.P. to create a custom exception if Customer withdraw amount
+which is greater than account balance then program will show custom
+exception otherwise amount will deduct from account balance.
+Account balance is:2000 Enter withdraw
+amount:2500
+Sorry, insufficient balance, you need more 500 Rs.To perform
+this transaction.
+package Assignment;
+import java.util.*;
+
+class InsufficientBalanceException extends Exception {
+    public InsufficientBalanceException(String message) {
+        super(message);
+    }
+}
+public class Custom_Exception {
+	private double balance;
+	public Custom_Exception(double inibal)
+	{
+		this.balance=inibal;
+	}
+	public void withdraw(double amount) throws InsufficientBalanceException {
+        if (amount > balance) {
+            double deduct = amount - balance;
+            throw new InsufficientBalanceException(
+                "Sorry, insufficient balance. You need more " + deduct + " Rs to perform this transaction."
+            );
+        } else {
+            balance -= amount;
+            System.out.println("Transaction successful! Remaining balance: " + balance);
+        }
+    }
+	public static void main(String[] args) throws InsufficientBalanceException{
+		Scanner scanner = new Scanner(System.in);
+        Custom_Exception account = new Custom_Exception(2000); 
+
+        System.out.print("Enter withdraw amount: ");
+        double withdrawAmount = scanner.nextDouble();
+
+       
+        account.withdraw(withdrawAmount);
+
+	}
+}
+
+
+
+
+	
